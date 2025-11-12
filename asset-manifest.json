@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/E-commerce-Fernandez/static/css/main.d97e53bd.css",
+    "main.js": "/E-commerce-Fernandez/static/js/main.ab3b4888.js",
+    "static/js/453.f3dfede3.chunk.js": "/E-commerce-Fernandez/static/js/453.f3dfede3.chunk.js",
+    "index.html": "/E-commerce-Fernandez/index.html",
+    "main.d97e53bd.css.map": "/E-commerce-Fernandez/static/css/main.d97e53bd.css.map",
+    "main.ab3b4888.js.map": "/E-commerce-Fernandez/static/js/main.ab3b4888.js.map",
+    "453.f3dfede3.chunk.js.map": "/E-commerce-Fernandez/static/js/453.f3dfede3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d97e53bd.css",
+    "static/js/main.ab3b4888.js"
+  ]
+}
