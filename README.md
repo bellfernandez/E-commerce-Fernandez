@@ -68,3 +68,16 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+Este proyecto requiere instalar una dependencia adicional para funcionar correctamente:
+
+Instalar web-vitals
+
+Este paquete es necesario para que el archivo reportWebVitals.js compile sin errores.
+
+Para instalarlo, ejecutar:
+
+npm install web-vitals
