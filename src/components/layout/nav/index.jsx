@@ -1,14 +1,18 @@
-import CartWidget from './CartWidget';
+import CartWidget from "./CartWidget";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
     <nav className="navbar">
-      <h1 className="logo">Hop Store</h1>
+      <Link to="/" className="logo">Hop Store</Link>
+
       <ul className="nav-links">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Productos</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><Link to="/">Inicio</Link></li>
+        <li><Link to="/category/cervezas">Cervezas</Link></li>
+        <li><Link to="/category/cursos">cursos</Link></li>
+        <li><Link to="/category/packs">Packs</Link></li>
       </ul>
+
       <CartWidget />
     </nav>
   );

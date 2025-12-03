@@ -1,21 +1,29 @@
-import React from 'react'
-
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { getProducts, getProductsByCategory } from "../../data/asyncMock";
+import ItemCard from "./ItemCard";
 
 const ItemListContainer = ({ greeting }) => {
-  return (
-    <section style={styles.container}>
-      <h2>{greeting}</h2>
-      <p>Descubrí los mejores productos seleccionados para vos </p>
-    </section>
-  )
-}
+  const [products, setProducts] = useState([]);
+  const { categoryId } = useParams();
 
-const styles = {
-  container: {
-    textAlign: 'center',
-    marginTop: '3rem',
-    fontFamily: 'Poppins, sans-serif',
-  },
-}
- 
-export default ItemListContainer
+  useEffect(() => {
+    const fetch = categoryId ? getProductsByCategory(categoryId) : getProducts();
+
+    fetch.then((res) => setProducts(res));
+  }, [categoryId]);
+
+  return (
+    <section style={{ textAlign: "center", marginTop: "3rem" }}>
+      <h2>{greeting || (categoryId && `Categoría: ${categoryId}`)}</h2>
+
+      <div className="cards-container">
+        {products.map((prod) => (
+          <ItemCard key={prod.id} {...prod} />
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default ItemListContainer;
