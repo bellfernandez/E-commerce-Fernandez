@@ -6,29 +6,25 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/E-commerce-Fernandez">
       <NavBar />
 
       <Routes>
-        {/* HOME */}
         <Route 
           path="/" 
           element={<ItemListContainer greeting="¡Bienvenida a tu tienda online, Belén!" />} 
         />
 
-        {/* CATEGORÍAS */}
         <Route 
           path="/category/:categoryId" 
           element={<ItemListContainer />} 
         />
 
-        {/* DETALLE PRODUCTO */}
         <Route 
           path="/item/:id" 
           element={<ItemDetailContainer />} 
         />
 
-        {/* 404 */}
         <Route 
           path="*" 
           element={<h2 style={{ textAlign: "center", marginTop: "3rem" }}>404 - Página no encontrada</h2>} 
