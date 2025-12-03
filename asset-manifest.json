@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/E-commerce-Fernandez/static/css/main.d97e53bd.css",
-    "main.js": "/E-commerce-Fernandez/static/js/main.ab3b4888.js",
-    "static/js/453.f3dfede3.chunk.js": "/E-commerce-Fernandez/static/js/453.f3dfede3.chunk.js",
+    "main.css": "/E-commerce-Fernandez/static/css/main.ef68050b.css",
+    "main.js": "/E-commerce-Fernandez/static/js/main.d5472429.js",
+    "static/js/488.157037c0.chunk.js": "/E-commerce-Fernandez/static/js/488.157037c0.chunk.js",
     "index.html": "/E-commerce-Fernandez/index.html",
-    "main.d97e53bd.css.map": "/E-commerce-Fernandez/static/css/main.d97e53bd.css.map",
-    "main.ab3b4888.js.map": "/E-commerce-Fernandez/static/js/main.ab3b4888.js.map",
-    "453.f3dfede3.chunk.js.map": "/E-commerce-Fernandez/static/js/453.f3dfede3.chunk.js.map"
+    "main.ef68050b.css.map": "/E-commerce-Fernandez/static/css/main.ef68050b.css.map",
+    "main.d5472429.js.map": "/E-commerce-Fernandez/static/js/main.d5472429.js.map",
+    "488.157037c0.chunk.js.map": "/E-commerce-Fernandez/static/js/488.157037c0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d97e53bd.css",
-    "static/js/main.ab3b4888.js"
+    "static/css/main.ef68050b.css",
+    "static/js/main.d5472429.js"
   ]
 }
