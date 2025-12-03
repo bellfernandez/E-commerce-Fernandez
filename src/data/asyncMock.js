@@ -3,30 +3,48 @@ const products = [
     id: "1",
     nombre: "Cerveza Rubia Lager",
     precio: 7000,
-    categoria: "rubia",
+    categoria: "cervezas",
     stock: 10,
-    img: "/media/rubia1.jpg",
+    img: "/media/rubia1.jpeg",
     descripcion: "Cerveza rubia suave y refrescante."
   },
   {
     id: "2",
     nombre: "Cerveza Pumpkin",
     precio: 7800,
-    categoria: "calabaza",
+    categoria: "cervezas",
     stock: 8,
-    img: "/media/pumpkin.1",
+    img: "/media/pumpkin.jpeg",
     descripcion: "Cerveza con gusto único, edición limitada."
   },
   {
     id: "3",
     nombre: "Cerveza Negra Stout",
     precio: 7000,
-    categoria: "negra",
+    categoria: "cervezas",
     stock: 5,
-    img: "/media/negra1.jpg",
+    img: "/media/negra1.jpeg",
     descripcion: "Cerveza negra fuerte con notas de café y chocolate."
   },
+ 
+  {
+    id: "4",
+    nombre: "Curso de Cerveza Artesanal",
+    precio: 150000,
+    categoria: "cursos",
+    img: "/media/rubia1.jpeg",
+    descripcion: "Aprende a hacer cerveza en casa"
+  },
+  {
+    id: "5",
+    nombre: "Pack de Cervezas 6 unidades",
+    precio: 30000,
+    categoria: "packs",
+    img: "/media/pumpkin.jpeg",
+    descripcion: "Pack surtido de cervezas artesanales"
+  }
 ];
+
 
 export const getProducts = () => {
   return new Promise(resolve => {
