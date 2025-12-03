@@ -5,7 +5,7 @@ const products = [
     precio: 7000,
     categoria: "cervezas",
     stock: 10,
-    img: "/media/rubia1.jpeg",
+    img: process.env.PUBLIC_URL + "/media/rubia1.jpeg",
     descripcion: "Cerveza rubia suave y refrescante."
   },
   {
@@ -14,7 +14,7 @@ const products = [
     precio: 7800,
     categoria: "cervezas",
     stock: 8,
-    img: "/media/pumpkin.jpeg",
+    img: process.env.PUBLIC_URL + "/media/pumpkin.jpeg",
     descripcion: "Cerveza con gusto único, edición limitada."
   },
   {
@@ -23,7 +23,7 @@ const products = [
     precio: 7000,
     categoria: "cervezas",
     stock: 5,
-    img: "/media/negra1.jpeg",
+    img: process.env.PUBLIC_URL + "/media/negra1.jpeg",
     descripcion: "Cerveza negra fuerte con notas de café y chocolate."
   },
  
@@ -32,7 +32,7 @@ const products = [
     nombre: "Curso de Cerveza Artesanal",
     precio: 150000,
     categoria: "cursos",
-    img: "/media/rubia1.jpeg",
+    img: process.env.PUBLIC_URL + "/media/rubia1.jpeg",
     descripcion: "Aprende a hacer cerveza en casa"
   },
   {
@@ -40,7 +40,7 @@ const products = [
     nombre: "Pack de Cervezas 6 unidades",
     precio: 30000,
     categoria: "packs",
-    img: "/media/pumpkin.jpeg",
+    img: process.env.PUBLIC_URL + "/media/pumpkin.jpeg",
     descripcion: "Pack surtido de cervezas artesanales"
   }
 ];
