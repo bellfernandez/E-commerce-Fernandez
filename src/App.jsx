@@ -6,7 +6,7 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter basename="/E-commerce-Fernandez">
+    <HashRouter basename="/E-commerce-Fernandez">
       <NavBar />
 
       <Routes>
