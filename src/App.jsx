@@ -1,5 +1,5 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
-import NavBar from "./components/layout/NavBar"; 
+import NavBar from "./components/layout/nav/index.jsx";
 import ItemListContainer from "./components/container/ItemListContainer";
 import ItemDetailContainer from "./components/container/ItemDetailContainer";
 import "./App.css";
