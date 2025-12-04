@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getProductById } from "../../data/asyncMock";
-import ItemCount from "../ItemCount";
+import ItemCount from "../ItemCount"; 
 
 function ItemDetailContainer() {
   const { id } = useParams();
@@ -24,7 +24,7 @@ function ItemDetailContainer() {
         <h2>{product.nombre}</h2>
         <p>{product.descripcion}</p>
         <h3>${product.precio}</h3>
-        <ItemCount stock={product.stock} onAdd={handleAdd} />
+        <ItemCount stock={product.stock} onAdd={handleAdd} /> 
       </div>
     </div>
   );
