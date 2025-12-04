@@ -26,12 +26,12 @@ const products = [
     img: process.env.PUBLIC_URL + "/media/negra1.jpeg",
     descripcion: "Cerveza negra fuerte con notas de café y chocolate."
   },
- 
   {
     id: "4",
     nombre: "Curso de Cerveza Artesanal",
     precio: 150000,
     categoria: "cursos",
+    stock: 1,
     img: process.env.PUBLIC_URL + "/media/rubia1.jpeg",
     descripcion: "Aprende a hacer cerveza en casa"
   },
@@ -40,32 +40,26 @@ const products = [
     nombre: "Pack de Cervezas 6 unidades",
     precio: 30000,
     categoria: "packs",
+    stock: 5,
     img: process.env.PUBLIC_URL + "/media/pumpkin.jpeg",
     descripcion: "Pack surtido de cervezas artesanales"
   }
 ];
 
-
 export const getProducts = () => {
-  return new Promise(resolve => {
-    setTimeout(() => {
-      resolve(products);
-    }, 1000);
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(products), 1000);
   });
 };
 
 export const getProductById = (id) => {
-  return new Promise(resolve => {
-    setTimeout(() => {
-      resolve(products.find(prod => prod.id === id));
-    }, 1000);
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(products.find((prod) => prod.id === id)), 1000);
   });
 };
 
 export const getProductsByCategory = (categoryId) => {
-  return new Promise(resolve => {
-    setTimeout(() => {
-      resolve(products.filter(prod => prod.categoria === categoryId));
-    }, 1000);
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(products.filter((prod) => prod.categoria === categoryId)), 1000);
   });
 };
