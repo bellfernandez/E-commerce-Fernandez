@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/E-commerce-Fernandez/static/css/main.cf4d7b5f.css",
+    "main.js": "/E-commerce-Fernandez/static/js/main.34a54c52.js",
+    "index.html": "/E-commerce-Fernandez/index.html",
+    "main.cf4d7b5f.css.map": "/E-commerce-Fernandez/static/css/main.cf4d7b5f.css.map",
+    "main.34a54c52.js.map": "/E-commerce-Fernandez/static/js/main.34a54c52.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf4d7b5f.css",
+    "static/js/main.34a54c52.js"
+  ]
+}
