@@ -151,11 +151,14 @@ h2 {
   }
 
   .detail-container img {
-    width: 100%; 
-  }
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+}
 
   .detail-container div {
     max-width: 100%;
     text-align: center;
   }
 }
+
