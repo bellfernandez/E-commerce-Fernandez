@@ -46,20 +46,29 @@ const products = [
   }
 ];
 
+// todos los productos
 export const getProducts = () => {
-  return new Promise((resolve) => {
+  return new Promise(resolve => {
     setTimeout(() => resolve(products), 1000);
   });
 };
 
+// producto por id
 export const getProductById = (id) => {
-  return new Promise((resolve) => {
-    setTimeout(() => resolve(products.find((prod) => prod.id === id)), 1000);
+  return new Promise(resolve => {
+    setTimeout(
+      () => resolve(products.find(prod => prod.id === id)),
+      1000
+    );
   });
 };
 
+// productos por categoría
 export const getProductsByCategory = (categoryId) => {
-  return new Promise((resolve) => {
-    setTimeout(() => resolve(products.filter((prod) => prod.categoria === categoryId)), 1000);
+  return new Promise(resolve => {
+    setTimeout(
+      () => resolve(products.filter(prod => prod.categoria === categoryId)),
+      1000
+    );
   });
 };

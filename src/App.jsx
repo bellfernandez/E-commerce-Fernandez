@@ -1,41 +1,37 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
-import NavBar from "./components/layout/nav/index.jsx";
+import { Routes, Route } from "react-router-dom";
+import NavBar from "./components/layout/nav/NavBar";
 import ItemListContainer from "./components/container/ItemListContainer";
 import ItemDetailContainer from "./components/container/ItemDetailContainer";
+import Cart from "./components/container/Cart";
+import Checkout from "./components/container/Checkout";
 import "./App.css";
 
 function App() {
   return (
-    <HashRouter>
+    <>
       <NavBar />
 
       <Routes>
-        <Route 
-          path="/" 
-          element={<ItemListContainer greeting="¡Bienvenida a tu tienda online, Belén!" />} 
+        <Route
+          path="/"
+          element={<ItemListContainer greeting="Bienvenida" />}
         />
 
-        <Route 
-          path="/category/:categoryId" 
-          element={<ItemListContainer />} 
+        <Route
+          path="/category/:categoryId"
+          element={<ItemListContainer />}
         />
 
-        <Route 
-          path="/item/:id" 
-          element={<ItemDetailContainer />} 
+        
+        <Route
+          path="/item/:itemId"
+          element={<ItemDetailContainer />}
         />
 
-        <Route 
-          path="*" 
-          element={
-            <h2 style={{ textAlign: "center", marginTop: "3rem" }}>
-              404 - Página no encontrada
-            </h2>
-          } 
-        />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
-
-    </HashRouter>
+    </>
   );
 }
 

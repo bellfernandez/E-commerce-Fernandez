@@ -81,3 +81,19 @@ Este paquete es necesario para que el archivo reportWebVitals.js compile sin err
 Para instalarlo, ejecutar:
 
 npm install web-vitals
+
+# Proyecto Final E-commerce - Fernández
+
+E-commerce desarrollado con React como SPA.
+
+## Tecnologías
+- React
+- React Router
+- Context API
+- Firebase Firestore
+
+## Funcionalidades
+- Listado y detalle de productos
+- Carrito de compras
+- Checkout
+- Órdenes almacenadas en Firestore

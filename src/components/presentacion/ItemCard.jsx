@@ -8,8 +8,9 @@ function ItemCard({ id, nombre, precio, img }) {
       <p>${precio}</p>
 
       <Link to={`/item/${id}`} className="btn">
-        Ver detalle
+       Ver detalle
       </Link>
+
     </div>
   );
 }

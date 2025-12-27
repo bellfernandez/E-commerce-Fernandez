@@ -1,33 +1,26 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getProductById } from "../../data/asyncMock";
-import ItemCount from "./ItemCount.js";
+import ItemDetail from "../presentacion/ItemDetail";
 
-function ItemDetailContainer() {
-  const { id } = useParams();
-  const [product, setProduct] = useState(null);
+const ItemDetailContainer = () => {
+  const { itemId } = useParams(); // 🔴 TIENE QUE LLAMARSE IGUAL QUE EN LA RUTA
+  const [item, setItem] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    getProductById(id).then((res) => setProduct(res));
-  }, [id]);
+    setLoading(true);
 
-  const handleAdd = (count) => {
-    alert(`Agregaste ${count} unidades de ${product.nombre} al carrito`);
-  };
+    getProductById(itemId).then((resp) => {
+      setItem(resp);
+      setLoading(false);
+    });
+  }, [itemId]);
 
-  if (!product) return <h2>Cargando...</h2>;
+  if (loading) return <h2>Cargando producto...</h2>;
+  if (!item) return <h2>Producto no encontrado</h2>;
 
-  return (
-    <div className="detail-container">
-      <img src={product.img} alt={product.nombre} />
-      <div>
-        <h2>{product.nombre}</h2>
-        <p>{product.descripcion}</p>
-        <h3>${product.precio}</h3>
-        <ItemCount stock={product.stock} onAdd={handleAdd} /> 
-      </div>
-    </div>
-  );
-}
+  return <ItemDetail item={item} />;
+};
 
 export default ItemDetailContainer;
