@@ -2,7 +2,6 @@
   "name": "e-commerce-belen",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bellfernandez.github.io/E-commerce-Fernandez/",
   "dependencies": {
     "firebase": "^12.7.0",
     "react": "^18.2.0",
